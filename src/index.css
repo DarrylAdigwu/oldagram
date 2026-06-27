@@ -1,5 +1,124 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
+body {
+  background-color: #ededed;
+  width: 100dvw;
+  font-family: Verdana, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+ /***
+  Header
+ ***/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  height: 67px;
+  max-width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.header-logo {
+  height: 40px;
+}
+
+.user-avatar {
+  height: 36px;
+  border-radius: 50%;
+}
+
+/***
+  Feed
+***/
+#user-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.posts {
+  width: 100%;
+  height: fit-content;
+}
+
+.post-header {
+  display: flex;
+  height: 34px;
+  padding: 1rem;
+  gap: .5rem;
+  background-color: #ffffff;
+}
+
+.post-avatar {
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.post-username {
+  font-weight: bold;
+}
+
+/***
+  Content section
+***/
+.post-content {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.content-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+/***
+  Post interactions
+***/
+.post-interactions {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.interact-icon-like {
+  width: 23px;
+  aspect-ratio: 1 / 1;
+}
+
+.interact-icon-comment {
+ width: 23px;
+ aspect-ratio: 1 / 1;
+}
+
+.interact-icon-share {
+ height: 23px;
+ aspect-ratio: 1 / 1;
+}
+
+.commenter-name {
+  font-weight: bold;
+}
+
+.commenter-comment {
+ font-weight: normal;
+}
